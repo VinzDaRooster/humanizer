@@ -678,6 +678,46 @@
       animation: caret-blink 0.8s step-end infinite;
       margin-left: 1px;
     }
+
+    /* ── Mobile ── */
+    @media (max-width: 600px) {
+      #app-title {
+        word-break: keep-all;
+        white-space: nowrap;
+        font-size: clamp(42px, 12vw, 96px);
+      }
+
+      #header svg[viewBox="0 0 680 220"] {
+        display: none;
+      }
+
+      #app-pitch,
+      #app-sub {
+        font-size: 13px;
+        padding: 0 16px;
+        text-align: center;
+      }
+
+      #mode-selector {
+        flex-direction: column;
+      }
+      .mode-pill {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        height: 64px;
+        align-items: center;
+      }
+
+      #page {
+        flex-direction: column;
+        padding: 0 16px 24px;
+      }
+
+      textarea {
+        min-height: 180px;
+      }
+    }
   </style>
 </head>
 <body>
